@@ -38,7 +38,7 @@ public class AppTest {
 //		open("http://test.wemakeprice.com/deal/adeal/1617166");    //0원 딜
 
 		try {
-			open("http://test.wemakeprice.com/deal/adeal/1618480");
+			open("http://test.wemakeprice.com/deal/adeal/1618322");
 			$(By.xpath("//*[@id=\"contents\"]/div[2]/div[1]/div/div[2]/div[1]/div[6]/a[2]")).click();
 		} catch (Exception e) {
 			System.out.println("브라우저 오픈 실패 다시 오픈" + e);
@@ -65,7 +65,6 @@ public class AppTest {
 			System.out.println("구매목록 확인 버튼이 없습니다.(구매실패 또는 완료화면 비노출)" + e);
 			screenshot("pay");
 		}
-
 	}
 
 	@AfterMethod
